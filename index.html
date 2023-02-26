@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>array bidimensional</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <label>Escribe nombre:</label>
+    <input type="text" id="nombre" placeholder="nombre" />
+    <br />
+    <label>Escribe apellido:</label>
+    <input type="text" id="apellido" placeholder="apellido" />
+    <br />
+    <label>Escribe edad:</label>
+    <input type="number" id="edad" placeholder="edad" />
+    <button onclick="save()">save</button>
+
+    <button onclick="Mostar()">Show</button>
+
+    <table>
+      <thead>
+        <tr>
+          <th>name</th>
+          <th>apellido</th>
+          <th>edad</th>
+        </tr>
+      </thead>
+      <tbody id="body">
+        <tr><td>Asdrubal</td><td>Hurtado</td><td>18</td></tr>
+      </tbody>
+    </table>
+
+    <button onclick="showList()">showList</button>
+
+    <input type="number" id="promedio" placeholder="resultado" disabled>
+     <button onclick="imprimirPromedio()">Print</button>
+
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
